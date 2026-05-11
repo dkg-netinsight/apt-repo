@@ -1,0 +1,7 @@
+Archive: stable
+Version: 1.0
+Component: main
+Origin: NETINSIGHT
+Label: NETINSIGHT
+Architecture: amd64
+Description: NETINSIGHT enterprise apt repository — Ubuntu 24.04 (noble)

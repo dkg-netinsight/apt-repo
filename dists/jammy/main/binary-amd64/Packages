@@ -1,0 +1,207 @@
+Package: netinsight
+Version: 1.0.0-29
+Architecture: all
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 23
+Depends: netinsight-server (= 1.0.0-29), netinsight-frontend (= 1.0.0-29), netinsight-mysql-schema (= 1.0.0-29), netinsight-ingestor (= 1.0.0-29)
+Recommends: netinsight-doc (= 1.0.0-29)
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/netinsight/netinsight_1.0.0-29_all.deb
+Size: 17468
+SHA256: e09e5750937e97fc0389170940673a939a0f27ffef440baeb6cda3be705f4cf9
+SHA1: 143133702c9b0da8d914f0fc87ffa231ed17f721
+MD5sum: f07e7e33553e22afc476e45403b6400a
+Description: enterprise full-stack metapackage for NETINSIGHT
+ Single-step install of the NETINSIGHT enterprise stack:
+ .
+   apt install netinsight
+ .
+ Pulls server (Flask + Gunicorn + Celery), frontend (templates +
+ static + nginx vhost), mysql-schema (alembic + bootstrap), and
+ ingestor (FlowBit collector + listeners + MySQL bridge) at matched
+ versions. Recommends netinsight-doc.
+
+Package: netinsight-common
+Source: netinsight
+Version: 1.0.0-29
+Architecture: all
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 210
+Depends: adduser, systemd, lsb-base
+Breaks: netinsight (<< 1.0.0-2~)
+Replaces: netinsight (<< 1.0.0-2~)
+Provides: netinsight (= 1.0.0-29)
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/netinsight/netinsight-common_1.0.0-29_all.deb
+Size: 45856
+SHA256: 47f217bd3a9ffd0bb727050a3a78056ca0997f4058a63cf17acd87fc4ca784ab
+SHA1: 71f82af2e9bf8e273d51b74df00954180abb7218
+MD5sum: 4f1e5c9f7e00a11e32c367d248bc7a38
+Description: NETINSIGHT common files (units, conf, logrotate, AppArmor)
+ Shared assets needed by every NETINSIGHT install: systemd unit files,
+ logrotate configuration, AppArmor profile, the sanitised configuration
+ template, alembic.ini, and the permission-catalog reference data
+ (/usr/share/netinsight/docs/perm_catalog_v1.csv).
+ .
+ This package is required by all other NETINSIGHT binaries.
+
+Package: netinsight-doc
+Source: netinsight
+Version: 1.0.0-29
+Architecture: all
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 52
+Breaks: netinsight (<< 1.0.0-2~)
+Replaces: netinsight (<< 1.0.0-2~)
+Multi-Arch: foreign
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: doc
+Filename: pool/main/n/netinsight/netinsight-doc_1.0.0-29_all.deb
+Size: 42696
+SHA256: e50d4b8b8e10331bbe7f7a493a14263d481c17114f4e3166cea2cb20f1541e3a
+SHA1: a985ff8603b9a41d21315a9c6c25586347d4322b
+MD5sum: 4a5f6ccc93295b5bacb012d0764df364
+Description: NETINSIGHT user documentation
+ INSTALL.md, configuration-reference.md, upgrade-guide.md, migration-guide.md,
+ operations-runbook.md, and release-notes-1.0.0.md. The configuration
+ reference enumerates every INI key in the 47-section schema. The
+ operations runbook covers TLS rotation, secret rotation, DB backup,
+ /api/health interpretation, and the AppArmor archive disposition.
+
+Package: netinsight-frontend
+Source: netinsight
+Version: 1.0.0-29
+Architecture: all
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 6100
+Depends: netinsight-common (= 1.0.0-29)
+Recommends: nginx, netinsight-server (= 1.0.0-29)
+Breaks: netinsight (<< 1.0.0-2~)
+Replaces: netinsight (<< 1.0.0-2~)
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/netinsight/netinsight-frontend_1.0.0-29_all.deb
+Size: 4431810
+SHA256: 8a2aa5d0a48f589182f8058f8d598bf64c0254160a6a45487f4a8022fc8ae8b6
+SHA1: 1445a3b4d7b8f2bb15cd1a9abd1d30a41822a03e
+MD5sum: c2de4c75720d41f29cba9ca0ba6699ec
+Description: NETINSIGHT frontend (templates, static, nginx vhost)
+ Server-rendered Jinja templates, static assets (CSS, JS ES modules,
+ images, icons), and the nginx vhost include
+ (/etc/nginx/sites-available/netinsight) used to expose the application
+ over HTTPS with rate limiting and OCSP stapling.
+
+Package: netinsight-ingestor
+Source: netinsight
+Version: 1.0.0-29
+Architecture: amd64
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 12081
+Depends: netinsight-common (= 1.0.0-29), python3, python3-mysql.connector, systemd, default-mysql-client | mariadb-client | mysql-client
+Recommends: netinsight-server (= 1.0.0-29)
+Breaks: netinsight (<< 1.0.0-2~)
+Replaces: netinsight (<< 1.0.0-2~)
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/netinsight/netinsight-ingestor_1.0.0-29_amd64.deb
+Size: 3986696
+SHA256: f76b3515ffef2c1e5374586a7bfcdb1107def8459769212ee008143930b8ebd8
+SHA1: 123819a7b61f6602827ae7d6e2bd9ee04b8a1e89
+MD5sum: e9466dc10797bf89e8d16191d9f9fb84
+Description: NETINSIGHT data plane (FlowBit collector + listeners + MySQL bridge)
+ The data-ingestion plane that feeds NETINSIGHT live traffic data:
+ .
+   - FlowBit (Go binary) — NetFlow/sFlow listener writing JSON to disk.
+   - FlowBit -> MySQL bridge — Python tail+insert into NETINSIGHT
+     LIVE_INSERT table.
+   - 11 stored-procedure cron entries for 30-day rolling aggregations
+     (LIVE_INSERT -> 30D_100_* and 30D_ALL_ALL tables).
+ .
+ Architecture: amd64 because the FlowBit binary is x86-64 native code.
+ All other NETINSIGHT packages are Architecture: all (Python).
+
+Package: netinsight-mysql-schema
+Source: netinsight
+Version: 1.0.0-29
+Architecture: all
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 182
+Depends: netinsight-common (= 1.0.0-29), python3, alembic | python3-alembic
+Recommends: default-mysql-server | default-mysql-server-core, default-mysql-client | mariadb-client, netinsight-server (= 1.0.0-29)
+Breaks: netinsight (<< 1.0.0-2~)
+Replaces: netinsight (<< 1.0.0-2~)
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/netinsight/netinsight-mysql-schema_1.0.0-29_all.deb
+Size: 43936
+SHA256: 9fec1215e493f9750eb0464582228bfd94a6ce54c9ab0893ad55892b95aa0e21
+SHA1: f2fe737403038b2321b05203a4be924864effa16
+MD5sum: 38fbcde8359570db991204c65d37457a
+Description: NETINSIGHT database migrations (alembic)
+ Alembic migration tree (current head c9d0e1f2a3b4) defining the
+ NETINSIGHT MySQL schema: users, roles, permissions, sessions,
+ reports, sources, and audit. Used by Phase 14 postinst on first
+ install and on every package upgrade.
+
+Package: netinsight-release
+Source: netinsight
+Version: 1.0.0-29+ubuntu22.04
+Architecture: all
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 34
+Depends: gnupg | gnupg2
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/netinsight/netinsight-release_1.0.0-29+ubuntu22.04_all.deb
+Size: 21652
+SHA256: 2b8579b0eb9e482d8602e051934fda16141d00619ab158ee03d5c0f9bdef3c5d
+SHA1: 594487299efd2ffb7e4e6fed665e7ab70a690cef
+MD5sum: a314676761ae3b5029768aa1e7cf409e
+Description: NETINSIGHT APT repository sources and signing key
+ This package installs the GPG keyring at
+ /etc/apt/keyrings/netinsight-archive-keyring.gpg and registers
+ https://repo.netinsight.duckdns.org/ as an APT source for the
+ detected Ubuntu codename (jammy or noble).
+ .
+ Modeled on the zabbix-release pattern. The sources.list entry is
+ materialised by the postinst (codename auto-detected via
+ /etc/os-release) so a single binary serves both supported releases
+ without dpkg conffile contention on upgrade.
+
+Package: netinsight-server
+Source: netinsight
+Version: 1.0.0-29
+Architecture: all
+Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
+Installed-Size: 1190
+Depends: debconf (>= 0.5) | debconf-2.0, netinsight-common (= 1.0.0-29), python3 (>= 3.10), python3-pip, systemd, openssl, default-mysql-client | mariadb-client | mysql-client, default-mysql-server | mariadb-server | mysql-server, redis-server, nginx
+Recommends: default-mysql-server | default-mysql-server-core, netinsight-frontend (= 1.0.0-29), netinsight-mysql-schema (= 1.0.0-29), python3-flask, python3-werkzeug, python3-celery, python3-redis, python3-jinja2, python3-marshmallow, python3-requests, python3-pyotp, python3-mysql.connector
+Breaks: netinsight (<< 1.0.0-2~)
+Replaces: netinsight (<< 1.0.0-2~)
+Homepage: https://netinsight.duckdns.org/
+Priority: optional
+Section: net
+Filename: pool/main/n/netinsight/netinsight-server_1.0.0-29_all.deb
+Size: 225950
+SHA256: 7729e75bda3443e84f02d2ce6fac713f5b5f8e501e4af44fb1bb943a035f282a
+SHA1: 01149b752f9ee685fd358c1b6234a50501f048be
+MD5sum: 60d5a7c4a9f547f6734280df509ce98f
+Description: NETINSIGHT server (Flask + Gunicorn + Celery)
+ The Python application code (Flask + Gunicorn for HTTP, Celery for
+ background reports + scheduled jobs) plus the four /usr/sbin/
+ launchers (netinsight-server, netinsight-worker, netinsight-scheduler,
+ netinsight-conf-test).
+ .
+ Live data flows through the ingestor against MySQL + Redis. Frontend
+ assets (templates, static, nginx vhost) ship in the netinsight-frontend
+ package; database migrations ship in netinsight-mysql-schema.
+

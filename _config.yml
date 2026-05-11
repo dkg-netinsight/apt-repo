@@ -1,0 +1,9 @@
+# Serve files verbatim — no Jekyll processing for an apt repository.
+theme: null
+plugins: []
+exclude:
+  - conf/
+  - db/
+  - logs/
+  - incoming/
+  - .gitattributes

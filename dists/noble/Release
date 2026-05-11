@@ -1,0 +1,30 @@
+Origin: NETINSIGHT
+Label: NETINSIGHT
+Suite: stable
+Codename: noble
+Version: 1.0
+Date: Mon, 11 May 2026 16:48:56 UTC
+Architectures: amd64
+Components: main
+Description: NETINSIGHT enterprise apt repository — Ubuntu 24.04 (noble)
+MD5Sum:
+ 041b251d9aef2ed715b3ee83824d6fce 8910 main/binary-amd64/Packages
+ 297355348b3fcd6ca3b495bf13f8d262 3082 main/binary-amd64/Packages.gz
+ a918cfbd599f3eafc56b78d3f5204090 177 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ 19301f1ee4319a485ba489905afed5d7 178 main/source/Release
+SHA1:
+ 51ebab57f9deeab101a8fa2bb25a3b1494015b3e 8910 main/binary-amd64/Packages
+ 4876aae804f7eb6099f9bb331ca9b1f2089e859e 3082 main/binary-amd64/Packages.gz
+ 70f807e3d8a38ab4dd04defbd9fb6cd619ac5835 177 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ 59aa8a7ce960144c7ad9fbcd3aea8c6f9681e60e 178 main/source/Release
+SHA256:
+ ea9132488b8fcb15b1985c25daa478bf2110cf3624c63aefb9f2fcf9e7da4010 8910 main/binary-amd64/Packages
+ 7359dd85035ce7624c365078f404218ed514c90d4c0bf219d0736930833af7b9 3082 main/binary-amd64/Packages.gz
+ ac266114d75970fca885b7df2a121d90fcf4a62c3015c15d38247e94b4ee9a53 177 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ 6d18ef7b643bf07ff7d0deb6e690b80ea408a0c7a11a723f2f5a92e139492e9f 178 main/source/Release

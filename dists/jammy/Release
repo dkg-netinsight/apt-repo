@@ -1,0 +1,30 @@
+Origin: NETINSIGHT
+Label: NETINSIGHT
+Suite: stable
+Codename: jammy
+Version: 1.0
+Date: Mon, 11 May 2026 16:48:54 UTC
+Architectures: amd64
+Components: main
+Description: NETINSIGHT enterprise apt repository — Ubuntu 22.04 (jammy)
+MD5Sum:
+ d2badc14e19b420d302fedc23b74e8a1 8910 main/binary-amd64/Packages
+ 6717b5361b7df81e1f2c2de4f55278d0 3082 main/binary-amd64/Packages.gz
+ 56a2038587d30adb50424ff7f723c64a 177 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ 0373183c68cb5d7b1dd68d9a3e5f6cf0 178 main/source/Release
+SHA1:
+ 2f333c63f71fa06a9289898bb5eca453b6cde216 8910 main/binary-amd64/Packages
+ f50665e78ccdae5ca448c17e61507ab97c494e44 3082 main/binary-amd64/Packages.gz
+ 3e1da984371d8c28f832d04c59178782e85c7af2 177 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ 0982739194581e81e77ab02aadcbeee090c65161 178 main/source/Release
+SHA256:
+ a469b847e67983904d9560b008fd9441a2334df42802ef0f56be32cb2709f4d1 8910 main/binary-amd64/Packages
+ 3f4e87bbbcbabf7753d93bbea32903708bce4a865b4f0da45b199fa19d149915 3082 main/binary-amd64/Packages.gz
+ 6eefb5d9810b6b0c221104b5a4f92d9e5de2e8efb31734674b69c0097b46167b 177 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ 3e3845d9fd005987fb4cb429cdd420247fde250de673615de32521363aa6949f 178 main/source/Release
