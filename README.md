@@ -14,16 +14,16 @@ Pick the `netinsight-release` `.deb` matching your Ubuntu LTS, then `apt install
 
 **Ubuntu 22.04 (jammy):**
 ```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-29+ubuntu22.04_all.deb
-dpkg -i netinsight-release_1.0.0-29+ubuntu22.04_all.deb
+wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-32+ubuntu22.04_all.deb
+dpkg -i netinsight-release_1.0.0-32+ubuntu22.04_all.deb
 apt update
 apt install -y netinsight
 ```
 
 **Ubuntu 24.04 (noble):**
 ```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-29+ubuntu24.04_all.deb
-dpkg -i netinsight-release_1.0.0-29+ubuntu24.04_all.deb
+wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-32+ubuntu24.04_all.deb
+dpkg -i netinsight-release_1.0.0-32+ubuntu24.04_all.deb
 apt update
 apt install -y netinsight
 ```
