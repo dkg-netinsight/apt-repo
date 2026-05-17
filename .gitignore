@@ -1,0 +1,13 @@
+# reprepro state (regenerated on every publish; never commit)
+db/
+logs/
+incoming/
+
+# reprepro intermediate
+*.new
+*.tmp
+
+# Editor / OS
+.DS_Store
+*.swp
+*~
