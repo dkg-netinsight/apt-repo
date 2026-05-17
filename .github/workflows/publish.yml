@@ -1,0 +1,131 @@
+name: Publish to apt-repo
+
+on:
+  repository_dispatch:
+    types: [netinsight-release-published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish (e.g. 1.0.0-32)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    name: reprepro publish + sign + push gh-pages
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Resolve target version
+        id: ver
+        run: |
+          if [ -n "${{ github.event.inputs.version }}" ]; then
+            echo "version=${{ github.event.inputs.version }}" >> "${GITHUB_OUTPUT}"
+          else
+            echo "version=${{ github.event.client_payload.version }}" >> "${GITHUB_OUTPUT}"
+          fi
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Install reprepro + gnupg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends reprepro gnupg
+
+      - name: Import GPG signing key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+          gpg --list-secret-keys --keyid-format=LONG
+          echo "trusted-key 0x02E2D963F0BC0D33" >> ~/.gnupg/gpg.conf
+
+      - name: Download .debs from netinsight Release
+        env:
+          GH_TOKEN: ${{ secrets.NETINSIGHT_PAT }}
+        run: |
+          set -euo pipefail
+          VER="${{ steps.ver.outputs.version }}"
+          mkdir -p /tmp/incoming
+          gh release download "v${VER}" \
+            --repo dkg-netinsight/netinsight \
+            --pattern '*.deb' \
+            --pattern '*.ddeb' \
+            --dir /tmp/incoming
+          ls -lh /tmp/incoming/
+
+      - name: reprepro includedeb (jammy + noble)
+        run: |
+          set -euo pipefail
+          VER="${{ steps.ver.outputs.version }}"
+          # Functional packages: codename-agnostic; same .deb to both jammy + noble.
+          FUNC=(
+            "netinsight-common_${VER}_all.deb"
+            "netinsight-server_${VER}_all.deb"
+            "netinsight-frontend_${VER}_all.deb"
+            "netinsight-mysql-schema_${VER}_all.deb"
+            "netinsight-ingestor_${VER}_amd64.deb"
+            "netinsight-doc_${VER}_all.deb"
+            "netinsight_${VER}_all.deb"
+          )
+          # Per-codename release variants.
+          for codename in jammy noble; do
+            UBUNTU_VER=$( [ "$codename" = "jammy" ] && echo "22.04" || echo "24.04" )
+            DEBS=()
+            for f in "${FUNC[@]}"; do DEBS+=("/tmp/incoming/${f}"); done
+            DEBS+=("/tmp/incoming/netinsight-release_${VER}+ubuntu${UBUNTU_VER}_all.deb")
+            echo "=== publish to ${codename} ==="
+            reprepro -b "${PWD}" -V includedeb "${codename}" "${DEBS[@]}"
+          done
+          echo
+          echo "=== pool after publish ==="
+          ls pool/main/n/netinsight/
+
+      - name: Drop reprepro internal state from working tree
+        run: |
+          rm -rf db/ logs/ incoming/
+
+      - name: Commit + push gh-pages
+        run: |
+          set -euo pipefail
+          VER="${{ steps.ver.outputs.version }}"
+          git config user.email "ci-publish@dkg-netinsight.github.io"
+          git config user.name "apt-repo publish CI"
+          # Bump index.html version refs if present.
+          if [ -f index.html ]; then
+            sed -i -E "s|1\.0\.0-[0-9]+|${VER}|g" index.html
+          fi
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+            exit 0
+          fi
+          git commit -m "Publish ${VER} (CI auto)"
+          git push origin gh-pages
+
+      - name: Verify gh-pages URLs (post-rebuild grace)
+        run: |
+          set -euo pipefail
+          VER="${{ steps.ver.outputs.version }}"
+          BASE=https://dkg-netinsight.github.io/apt-repo
+          echo "Waiting up to 120s for GitHub Pages rebuild..."
+          for i in 1 2 3 4 5 6 7 8 9 10 11 12; do
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' -L \
+              "${BASE}/pool/main/n/netinsight/netinsight-release_${VER}+ubuntu22.04_all.deb")
+            if [ "${CODE}" = "200" ]; then
+              echo "  iter ${i}: HTTP 200 ✓"
+              break
+            fi
+            echo "  iter ${i}: HTTP ${CODE} (retry in 10s)"
+            sleep 10
+          done
+          curl -s -o /dev/null -w "  jammy InRelease: HTTP %{http_code}\n" \
+            "${BASE}/dists/jammy/InRelease"
+          curl -s -o /dev/null -w "  noble InRelease: HTTP %{http_code}\n" \
+            "${BASE}/dists/noble/InRelease"
