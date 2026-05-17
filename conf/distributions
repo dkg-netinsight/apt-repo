@@ -1,0 +1,21 @@
+Origin: NETINSIGHT
+Label: NETINSIGHT
+Suite: stable
+Codename: jammy
+Version: 1.0
+Architectures: amd64 source
+Components: main
+Description: NETINSIGHT enterprise apt repository — Ubuntu 22.04 (jammy)
+SignWith: 477C1561698EB0C329C3C6DD02E2D963F0BC0D33
+Tracking: minimal
+
+Origin: NETINSIGHT
+Label: NETINSIGHT
+Suite: stable
+Codename: noble
+Version: 1.0
+Architectures: amd64 source
+Components: main
+Description: NETINSIGHT enterprise apt repository — Ubuntu 24.04 (noble)
+SignWith: 477C1561698EB0C329C3C6DD02E2D963F0BC0D33
+Tracking: minimal
