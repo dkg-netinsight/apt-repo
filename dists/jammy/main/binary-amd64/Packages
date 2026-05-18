@@ -162,10 +162,10 @@ Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
 Filename: pool/main/n/netinsight/netinsight-release_1.0.0-43+ubuntu22.04_all.deb
-Size: 28948
-SHA256: 7ea657d364fd7889470a51f6d90f677a85ccb42110fbd238b999cc7b697ab28c
-SHA1: f9ad2843a3de2a836d1963255e5bbf968c8965e7
-MD5sum: 38e8a30fe3b64b1e4696306433dbdd5f
+Size: 28938
+SHA256: e2d5cce3238436b274a4f3b70d21abdd9d136bc72eb66cec48675f8546d9619b
+SHA1: 5dbedd3b5a0def1828cc5b52b2390d0318868071
+MD5sum: 6e005a94c1d0161611c34019e046f482
 Description: NETINSIGHT APT repository sources and signing key
  This package installs the GPG keyring at
  /etc/apt/keyrings/netinsight-archive-keyring.gpg and registers

@@ -6,44 +6,44 @@ Label: NETINSIGHT
 Suite: stable
 Codename: jammy
 Version: 1.0
-Date: Mon, 18 May 2026 21:39:09 UTC
+Date: Mon, 18 May 2026 21:46:16 UTC
 Architectures: amd64
 Components: main
 Description: NETINSIGHT enterprise apt repository — Ubuntu 22.04 (jammy)
 MD5Sum:
- a860feff0610c602a75d4e918423d7f4 9021 main/binary-amd64/Packages
- 93b9696d7127f2a42aeeca9553714c12 3105 main/binary-amd64/Packages.gz
+ f2c0e9cb196dba398df3643a829618c7 9021 main/binary-amd64/Packages
+ 7017a7d08d131e618a5457cc42097e73 3103 main/binary-amd64/Packages.gz
  56a2038587d30adb50424ff7f723c64a 177 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  0373183c68cb5d7b1dd68d9a3e5f6cf0 178 main/source/Release
 SHA1:
- e37dd9d7bb5f7d856b6a69a0fa50462b164a592c 9021 main/binary-amd64/Packages
- fedc6e541097c3c8b7d12d360e6f68bf30654e51 3105 main/binary-amd64/Packages.gz
+ 545d305965f18fed864a2970afc124b6c0a4810c 9021 main/binary-amd64/Packages
+ 06a01abe6575a61a2c4a0b7f32633144a85bead7 3103 main/binary-amd64/Packages.gz
  3e1da984371d8c28f832d04c59178782e85c7af2 177 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  0982739194581e81e77ab02aadcbeee090c65161 178 main/source/Release
 SHA256:
- 452de9fb21367a794cb0738b759ad52da862b567686709a8a8762c87511de9c2 9021 main/binary-amd64/Packages
- 50fa901195472ae6c9195238dcd16142f0fe650a70893003ec68b70c9887d384 3105 main/binary-amd64/Packages.gz
+ 0c148ee818682f50cacd6756a3e60f41d8062d7854dd3e55d2aa55dad7cb4954 9021 main/binary-amd64/Packages
+ 8369c53b89283ac62b482cbd522215aa318b9d629bb2503062c102b54b54a025 3103 main/binary-amd64/Packages.gz
  6eefb5d9810b6b0c221104b5a4f92d9e5de2e8efb31734674b69c0097b46167b 177 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
  3e3845d9fd005987fb4cb429cdd420247fde250de673615de32521363aa6949f 178 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEENxm7BqTT6Rz37OXhGhQgrOQNwhgFAmoLhv0ACgkQGhQgrOQN
-whhAvw//dZ7xhvToxxsfKGfJesdY2C5cW++67AbDiMSqDb6lHiecVHtf/QDTD7iL
-DumRqzQECszr/n1drwgQ+PuoNJlftwqO0tppEYbvPmvcz0Mc6RYoKxZ1/OyRvUnn
-1aHRECl10IEIOABKNqlyxaD2WEIThfXNNd0+XO+Jx6KRDcuwqYnh3HAKs/Ez/L02
-knNRcIkdC/yBK3lkkfaB+IJKPqFs2mZerTUbBXpJvX+c1DSfWMKQjBVwXK1Vna+d
-/3AiNwapOLTEhQGNhpaCrn78FqlON8+RXajxLEFcj2Bn2OobeQqCKcNGb7IXI2pK
-eNJ3rYc3RKDDVPU9x46yOgXosUNeYoXYatptYmcUiR9QBwkc4/NhTHnpegxZuzQR
-7MmqzI05y+CyGPbrXr8VlhhbO21juiJAUMjhu4TRaCzObEXriYBvGFx8Fq7Bg0+3
-UtOKPLDIciTOkwlZGo4duBoiVPxycnCIUvci37IJ6iA8q6hd1ry6cRBiVcCzFp3M
-tbCVoiCPrK6OG3I/pv4WvsE1nAHfNxeyMEPg+Yxz9hIxHl1GuI4TJB2n8OgI8KJJ
-JWg+ADU4wCpADqzj1WCq5fpO6aBwszUq71Kni2w2L2Om3/EDiyhNK3YRXVZvprad
-izefEN2RO1ZY6NOWoZGg9Mxr5coFngZr9oTJXm4EuWMT4TLNbOo=
-=q1Sk
+iQIzBAEBCgAdFiEENxm7BqTT6Rz37OXhGhQgrOQNwhgFAmoLiKgACgkQGhQgrOQN
+whgN3hAAsnVrYhzo0rBsxyU/oIf+2/9o02DN8UGWa/O/dXdwr/PGZE4b8o3gN0Tw
+luNXWCOtVsq8NF7Ewxo81WRVH+BLqwd17bakEZg/iHScNMauLLVQ75PtzLHZ47nx
+Q5fslyIp9a981Q3anDnLDZF/HCULwIhuvZp0G1YqXcIR4USw52C0x9WAClXexkbA
+v9OB+WAK7EUjgZslQFdjE5R8clQX/TqDSXzLzzSievgra42wDhWpB03+05FM16HD
+bYjXlMOOWedfnIKOjWk/GZAzv0VKx0fooB0L7ThU17VCx97q7jv/oIFwK8trkOFz
+MCzOnSL4DwrGMZT3DKy28B2b5yh+atbb3Svxg8DHzlj/MHkoyIgW42wn+WYKH/O7
+KPL7dzJMgFRFZ9P0syQ2BtSOTKrtM+1Z46OnxT3EWzgFkjJ/WTLPkqQ2Wn2Rni1b
+4+XvGfk/nqcGEtN9wU6MmWeteX6D2VhHO+uDt102/LTqFSXjNTlgminuH17yP/as
+enHB13n/2HeJQs6gE+ubNc/G9QqIFgwwj/WYDNQL615slNwbNBFoB9FmFAi/I7yY
+ZZt4wsK4LY7Z9PLRtt9lOsuV9FUNfa0mZVFlZi1p/VJ66GCUxUrGVBWfX8Lkeyzs
+0ekrdxojuy7BWVAiNe1KGnxj07z6lheF4qZjKZhuYON6II2MDRs=
+=Ck2w
 -----END PGP SIGNATURE-----
