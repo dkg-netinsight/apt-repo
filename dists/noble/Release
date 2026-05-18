@@ -3,27 +3,27 @@ Label: NETINSIGHT
 Suite: stable
 Codename: noble
 Version: 1.0
-Date: Mon, 18 May 2026 11:34:27 UTC
+Date: Mon, 18 May 2026 13:02:51 UTC
 Architectures: amd64
 Components: main
 Description: NETINSIGHT enterprise apt repository — Ubuntu 24.04 (noble)
 MD5Sum:
- d46e60ac918c2cda63b94f01217b2dfc 8927 main/binary-amd64/Packages
- c33e4733c79587700a7e4ba2315f63d7 3095 main/binary-amd64/Packages.gz
+ 55f15a1759572e4754020a2250be7c1a 9021 main/binary-amd64/Packages
+ 8374d18fb37977f5634981fc9ccbd5d6 3102 main/binary-amd64/Packages.gz
  a918cfbd599f3eafc56b78d3f5204090 177 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  19301f1ee4319a485ba489905afed5d7 178 main/source/Release
 SHA1:
- ba82f94bd36db7a989e567fe7bc370dfc9d64c69 8927 main/binary-amd64/Packages
- ea9f0a101822edfdaa46eeb7799e1797ae12b89c 3095 main/binary-amd64/Packages.gz
+ 7b8fa8b4a3985c07a71e83758033882275614ec5 9021 main/binary-amd64/Packages
+ 1276b992a30567e2d9897b8861fbfaded726748f 3102 main/binary-amd64/Packages.gz
  70f807e3d8a38ab4dd04defbd9fb6cd619ac5835 177 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  59aa8a7ce960144c7ad9fbcd3aea8c6f9681e60e 178 main/source/Release
 SHA256:
- 39d7cc6d815588a23023158cd348bcb7ae096acd8b78ab2a36ddfdb5ad79968d 8927 main/binary-amd64/Packages
- d9d944df901ab6b9fe98bd7db8d2ce89a9dcc39b8a22f8c77d5217060763b2bf 3095 main/binary-amd64/Packages.gz
+ df4db4ec5b550a987b929003d23851b362ed24c6499567366a04f606fef23f7e 9021 main/binary-amd64/Packages
+ 427965cb470da905cb75ebe6da91603cc247c8c439718ab0395d463c9d348906 3102 main/binary-amd64/Packages.gz
  ac266114d75970fca885b7df2a121d90fcf4a62c3015c15d38247e94b4ee9a53 177 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
