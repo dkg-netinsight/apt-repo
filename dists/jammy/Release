@@ -3,27 +3,27 @@ Label: NETINSIGHT
 Suite: stable
 Codename: jammy
 Version: 1.0
-Date: Mon, 18 May 2026 21:25:27 UTC
+Date: Mon, 18 May 2026 21:39:09 UTC
 Architectures: amd64
 Components: main
 Description: NETINSIGHT enterprise apt repository — Ubuntu 22.04 (jammy)
 MD5Sum:
- 7b9760979f818468379085aebbf68920 9021 main/binary-amd64/Packages
- af1b714240273bc678b200c46296f218 3102 main/binary-amd64/Packages.gz
+ a860feff0610c602a75d4e918423d7f4 9021 main/binary-amd64/Packages
+ 93b9696d7127f2a42aeeca9553714c12 3105 main/binary-amd64/Packages.gz
  56a2038587d30adb50424ff7f723c64a 177 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  0373183c68cb5d7b1dd68d9a3e5f6cf0 178 main/source/Release
 SHA1:
- 8ac488c43645fcd1624a2de1d0205f6828934674 9021 main/binary-amd64/Packages
- 5a1d2cbe5103c09c456237fbcc4da1538b85ae49 3102 main/binary-amd64/Packages.gz
+ e37dd9d7bb5f7d856b6a69a0fa50462b164a592c 9021 main/binary-amd64/Packages
+ fedc6e541097c3c8b7d12d360e6f68bf30654e51 3105 main/binary-amd64/Packages.gz
  3e1da984371d8c28f832d04c59178782e85c7af2 177 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  0982739194581e81e77ab02aadcbeee090c65161 178 main/source/Release
 SHA256:
- df6e53114866e2e1b7dca359e2b9c6a623e8e212db1f09146074368e1c478e8e 9021 main/binary-amd64/Packages
- 172572984eec0b626981afe08cf84b08b062d3b160bf3941e22dec37d645dd46 3102 main/binary-amd64/Packages.gz
+ 452de9fb21367a794cb0738b759ad52da862b567686709a8a8762c87511de9c2 9021 main/binary-amd64/Packages
+ 50fa901195472ae6c9195238dcd16142f0fe650a70893003ec68b70c9887d384 3105 main/binary-amd64/Packages.gz
  6eefb5d9810b6b0c221104b5a4f92d9e5de2e8efb31734674b69c0097b46167b 177 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz

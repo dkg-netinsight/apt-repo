@@ -37,10 +37,10 @@ Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
 Filename: pool/main/n/netinsight/netinsight-common_1.0.0-43_all.deb
-Size: 53352
-SHA256: 37492690897f5208a7481a0d37fde02c8a79d4a99042bf0037d17a6d740b0a76
-SHA1: 5c5543df3424c3bdf9d5d740fc5c8b884b785bce
-MD5sum: 783028828c3649da92c23916790201a9
+Size: 53344
+SHA256: e1aff65441e5be6696fc49738307042be38d152a790247b62aa2c6a073364f6c
+SHA1: 6f87245b8828834022b62077438059dc39666af5
+MD5sum: e4a7ab6f796bb8e7fc11fedc848386a6
 Description: NETINSIGHT common files (units, conf, logrotate, AppArmor)
  Shared assets needed by every NETINSIGHT install: systemd unit files,
  logrotate configuration, AppArmor profile, the sanitised configuration
@@ -102,7 +102,7 @@ Source: netinsight
 Version: 1.0.0-43
 Architecture: amd64
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 13410
+Installed-Size: 13412
 Depends: libc6 (>= 2.34), netinsight-common (= 1.0.0-43), python3, python3-mysql.connector, systemd, default-mysql-client | mariadb-client | mysql-client
 Recommends: netinsight-server (= 1.0.0-43)
 Breaks: netinsight (<< 1.0.0-2~)
@@ -111,10 +111,10 @@ Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
 Filename: pool/main/n/netinsight/netinsight-ingestor_1.0.0-43_amd64.deb
-Size: 4189238
-SHA256: 4e53943e205fd5aa76935de1d7e05b5c60ce5a4e99fa580fd13966ea7c9384e5
-SHA1: 3b975974fd228367c3bf062363803d020a555738
-MD5sum: 064d17bd5b96e93458f249eb11212793
+Size: 4189704
+SHA256: d10bdad1ee5537754b1c616dd5b0c9d4838cd7a8f77b76c1fa2961db2737c8a2
+SHA1: 01ce0d2e6d9c9584716795bb9cd114e6bcd798f1
+MD5sum: be7e1eb559fd4ac0cb8a25742e25e44b
 Description: NETINSIGHT data plane (FlowBit collector + listeners + MySQL bridge)
  The data-ingestion plane that feeds NETINSIGHT live traffic data:
  .
@@ -162,10 +162,10 @@ Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
 Filename: pool/main/n/netinsight/netinsight-release_1.0.0-43+ubuntu22.04_all.deb
-Size: 28944
-SHA256: 63d4e0c78d1aebf4b44b74d9fb33f5305cc14be0143a867870afbdba034861c8
-SHA1: 503a9969b850c8ddd782bfa4ff7b8ad87df7c1e9
-MD5sum: 31a7d731e899eb6d11aa9337fc9b7652
+Size: 28948
+SHA256: 7ea657d364fd7889470a51f6d90f677a85ccb42110fbd238b999cc7b697ab28c
+SHA1: f9ad2843a3de2a836d1963255e5bbf968c8965e7
+MD5sum: 38e8a30fe3b64b1e4696306433dbdd5f
 Description: NETINSIGHT APT repository sources and signing key
  This package installs the GPG keyring at
  /etc/apt/keyrings/netinsight-archive-keyring.gpg and registers
