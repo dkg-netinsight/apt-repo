@@ -6,44 +6,44 @@ Label: NETINSIGHT
 Suite: stable
 Codename: noble
 Version: 1.0
-Date: Wed, 20 May 2026 20:28:18 UTC
+Date: Wed, 20 May 2026 20:37:57 UTC
 Architectures: amd64
 Components: main
 Description: NETINSIGHT enterprise apt repository — Ubuntu 24.04 (noble)
 MD5Sum:
- 6289dc9e733b7f64686dbb1deaa7bebe 9021 main/binary-amd64/Packages
- 7e2fe78bcf1de4b88cf10d41f63df475 3100 main/binary-amd64/Packages.gz
+ e7cea433495e80ea106376f81b357613 9021 main/binary-amd64/Packages
+ 5095d5f7912872147d302e20796e9fad 3099 main/binary-amd64/Packages.gz
  a918cfbd599f3eafc56b78d3f5204090 177 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  19301f1ee4319a485ba489905afed5d7 178 main/source/Release
 SHA1:
- 49c5541f926ee5223b973eb42db49f7b89b8ad45 9021 main/binary-amd64/Packages
- 717334474db8b644f4f98167ba8538f778e891c9 3100 main/binary-amd64/Packages.gz
+ 41de8571d4fad70f987048e1ea50e29ff93408ef 9021 main/binary-amd64/Packages
+ 0b02c0dbf44e9f7f5ad97010b38cb88041b834e7 3099 main/binary-amd64/Packages.gz
  70f807e3d8a38ab4dd04defbd9fb6cd619ac5835 177 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  59aa8a7ce960144c7ad9fbcd3aea8c6f9681e60e 178 main/source/Release
 SHA256:
- b3de7be55334b8336cbddf8d2082330d27802cf6ea3c4186f91717cb48fb3925 9021 main/binary-amd64/Packages
- b72f2eed071074b1e4d6ef283005a929f03a8199fccf5eb8b177b5d5801c05cb 3100 main/binary-amd64/Packages.gz
+ 64345b9cda0aef3dc97e229bb0f8c37e6335708537feddacea5bde2620b8b383 9021 main/binary-amd64/Packages
+ aae11c0285d67fce1aa24ef257307936c7d13a504d37f6458eb127a3ebd78eee 3099 main/binary-amd64/Packages.gz
  ac266114d75970fca885b7df2a121d90fcf4a62c3015c15d38247e94b4ee9a53 177 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
  6d18ef7b643bf07ff7d0deb6e690b80ea408a0c7a11a723f2f5a92e139492e9f 178 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEENxm7BqTT6Rz37OXhGhQgrOQNwhgFAmoOGWIACgkQGhQgrOQN
-whjj0hAArWuKWIcrMbVGwOXdwyUVaagf3e7KbgiYbJxjG0w9ZDdVuWHU3cASv1Q+
-p4YYdNVxZT/WCUsXAuZCieIUMybl19MYmzQH/bEBtFAnMjd0ax/kWlrZLFzFaTXm
-8/dsvo0+Ua2kVnJo6MlSDsP8Ww7kcClKKeqY/LFo4vikW9kidihoD1i/laCaRrGC
-JS4bQK9ECSoPnXNtorXMh6XfBauwURd5rVNissjpjNwccp264ylhZqtC/y7I/zo9
-SwvbdzHlmIIIZDvcvAfOYn2L/83U157gpa3gNGwX9a4/Udcj/0I1DBxRjmp6Pfz9
-ZXaac9m20VAkv/VuaolJW7+VYvuRYWtSaqMkuxuIME3MuJvfS3TxjdfemWDyVjwf
-EdqLpYcNHRNvHIpnu5ah3AIgdQx7WO5vUO9VfhoymRhXeqD7my1DbZrIAVJvoIpn
-5V/seAfAeVargnsUXVt7kVxHON7hFenWX979GMXyKqbi7Ypl6KVENSFd8IuIaab5
-w26naGCOzqiA+6rcWqbCxLLEUEow3GfuUEIzap3tbVU/0DtE7dB3r/P/CCjA7iqR
-VlDQpZOdyQqryS4z4wFJZNLeZOcXBDIskKXMTxEfSJ5RDAxXgdd2zILoK6Ygd1kj
-k0DQRvcn5vv9YF9bAOo03DqA78sgu4mrVCryKl0Mz6GvlQkxVvU=
-=k/gW
+iQIzBAEBCgAdFiEENxm7BqTT6Rz37OXhGhQgrOQNwhgFAmoOG6UACgkQGhQgrOQN
+whhkkBAAltmCc3v7eJk+ae0h3Wfo+N74490w8sH/hw+GaA61W+54J2JiFLxbKyM6
+MdBmXwAy02dP57NAD2lOrs6NI/YNXYvLV2H9zHo42x+q97tovhk9LD+tRtT3Vm3J
+Jo/ARpkwmzlH2V6X6vT9nquBmCPg547COM0v92sZ8GrWDOmnJSWavHPv5LLLLZHi
+LnWafBAGXceW21uF28JZuUEi7/VbndMGvGdKkceHqVj5tXZ4QdrlmPrMeavJgWVs
+45NE6R31SJc4w6ZzV/78xP9gCDbRqghBXHbKiX/i9l8QyjSSFFCoU+XkHAct1pkV
+LzpYR4/LplGU3C/6mExCQx078QngtWGIG4t+dJsRL6co4UTYWzn+j1EcCMjaTnfu
+HTVpmGMk4HC56giHjsVqTO22xI38xVhLlv23UxyfP0CZUGd0PyPgJL3Ojf/V/+AP
+YWWBtnfb4HBmxpzeKt3IRGLQlNM5Ot0OD0OC6V7BNHVSZ8VxU0wZloKuATEuHGir
+1lIxq29P4RaduiIJ8MKVUMoxibtyHEPKOjOEHNUrQnm3eMrd460C/ZOghM+ojZy6
+EWUYmtVWfO/eD04e0DOsn/FCFp6pvRqmUwYFkGvRYgjPS5SPmFXGU2i8RxKb2q5X
+yTEyjceRokYkf/HuciAMF3ILM8QT67/XyFf9gqs/t13Axauk8Ws=
+=HoBs
 -----END PGP SIGNATURE-----
