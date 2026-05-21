@@ -3,27 +3,27 @@ Label: NETINSIGHT
 Suite: stable
 Codename: noble
 Version: 1.0
-Date: Thu, 21 May 2026 19:35:18 UTC
+Date: Thu, 21 May 2026 19:43:05 UTC
 Architectures: amd64
 Components: main
 Description: NETINSIGHT enterprise apt repository — Ubuntu 24.04 (noble)
 MD5Sum:
- a241979e028c3f6e9ca37b8eeeef7478 10661 main/binary-amd64/Packages
- 973456cb10539dae3992dc9e90731249 3721 main/binary-amd64/Packages.gz
+ 5fae626195b234f22c0d750c99a88302 10661 main/binary-amd64/Packages
+ 1730bb0585e4c251f1dc9abf50746c84 3737 main/binary-amd64/Packages.gz
  a918cfbd599f3eafc56b78d3f5204090 177 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  19301f1ee4319a485ba489905afed5d7 178 main/source/Release
 SHA1:
- 600c5f04df30438b6f5b55e823f4779a81466697 10661 main/binary-amd64/Packages
- ab58a240ea38043fb7d347f73649a9c66cd50347 3721 main/binary-amd64/Packages.gz
+ c047ee80f7f8c64163f6402a33796a5c01320721 10661 main/binary-amd64/Packages
+ 7004cee198d01fa22ee579a2c6d624aa9589a695 3737 main/binary-amd64/Packages.gz
  70f807e3d8a38ab4dd04defbd9fb6cd619ac5835 177 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  59aa8a7ce960144c7ad9fbcd3aea8c6f9681e60e 178 main/source/Release
 SHA256:
- 4aa339278bfe5ca57e720b77f8a8ed15ec5cf6d05c714f0960b3119fd8ebb54d 10661 main/binary-amd64/Packages
- 9a8c3e157455266ca639322d9b87c49f4080642b7ba867ed46fdca6ea310cb85 3721 main/binary-amd64/Packages.gz
+ 241f50b98debad49eaaf4f0de4a793ed6c3f0eb809b1f76cbd4529820dea2a2f 10661 main/binary-amd64/Packages
+ 76ab61505b4423944c6a596b69eab6cdcb47c32c2d68a398c3db980648e56dd5 3737 main/binary-amd64/Packages.gz
  ac266114d75970fca885b7df2a121d90fcf4a62c3015c15d38247e94b4ee9a53 177 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
