@@ -3,27 +3,27 @@ Label: NETINSIGHT
 Suite: stable
 Codename: jammy
 Version: 1.0
-Date: Thu, 21 May 2026 20:32:00 UTC
+Date: Thu, 21 May 2026 20:41:31 UTC
 Architectures: amd64
 Components: main
 Description: NETINSIGHT enterprise apt repository — Ubuntu 22.04 (jammy)
 MD5Sum:
- 229defbab453d78232f3a45c6dbd338d 10672 main/binary-amd64/Packages
- 5d82d4852e156b563c92df05f5432875 3741 main/binary-amd64/Packages.gz
+ 5bf5ddb9e5821487a91f4905ed4b5082 10672 main/binary-amd64/Packages
+ 4456da891f818ccca280e69e1ae44a02 3746 main/binary-amd64/Packages.gz
  56a2038587d30adb50424ff7f723c64a 177 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  0373183c68cb5d7b1dd68d9a3e5f6cf0 178 main/source/Release
 SHA1:
- 166f773921885fd296ce618d1c6bf3dab1cfb989 10672 main/binary-amd64/Packages
- be30e2d6fb4f2de1f7b76e20fb66b74aee9baf26 3741 main/binary-amd64/Packages.gz
+ 4ed389c6126e9b5dcc85319bd4f7e983b0601c61 10672 main/binary-amd64/Packages
+ fac6105d3506d2c8bf113a6387ae40da8279b125 3746 main/binary-amd64/Packages.gz
  3e1da984371d8c28f832d04c59178782e85c7af2 177 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  0982739194581e81e77ab02aadcbeee090c65161 178 main/source/Release
 SHA256:
- e271512575c70709f8174e5363598501418662c289a243363fdce071ce9ee2fd 10672 main/binary-amd64/Packages
- e2fe70a08d52966acae4c9b70b70974587684be6c00122fa4b47a1a7837efdef 3741 main/binary-amd64/Packages.gz
+ c3d970e7a7d38ee41191d5781065be4cf18c9784b0d14685d1dd8ff97d4892a4 10672 main/binary-amd64/Packages
+ e0a5a17aa7069205b5a906412f32f8a7281b5abbb8b974ed7b71bdd598c3efab 3746 main/binary-amd64/Packages.gz
  6eefb5d9810b6b0c221104b5a4f92d9e5de2e8efb31734674b69c0097b46167b 177 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
