@@ -8,41 +8,23 @@ The repository is served via GitHub Pages at:
 
 The signed APT metadata + binary `.deb` files live on the `gh-pages` branch of this repo. The `main` branch (this branch) holds only operator-facing documentation + publishing scripts.
 
-## End-user install
-
-Pick the `netinsight-release` `.deb` matching your Ubuntu LTS, then `apt install`:
-
-### Tier 1 — canonical (cinematic, 2 commands, recommended)
+## Install NETINSIGHT
 
 **Ubuntu 22.04 (jammy):**
 ```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-82+ubuntu22.04_all.deb
-dpkg -i netinsight-release_1.0.0-82+ubuntu22.04_all.deb
+wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-84+ubuntu22.04_all.deb
+dpkg -i netinsight-release_1.0.0-84+ubuntu22.04_all.deb
 netinsight-install
 ```
 
 **Ubuntu 24.04 (noble):**
 ```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-82+ubuntu24.04_all.deb
-dpkg -i netinsight-release_1.0.0-82+ubuntu24.04_all.deb
+wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-84+ubuntu24.04_all.deb
+dpkg -i netinsight-release_1.0.0-84+ubuntu24.04_all.deb
 netinsight-install
 ```
 
-`netinsight-install` renders a branded TUI (banner, animated workflow, 8-stage progress, summary card with QR) and orchestrates `apt install netinsight` with output suppressed to `/var/log/netinsight/install.log`. See `netinsight-install(8)`.
-
-### Tier 2 — legacy 4-command path (no cinematic UI)
-
-**Ubuntu 22.04 (jammy):**
-```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-82+ubuntu22.04_all.deb
-dpkg -i netinsight-release_1.0.0-82+ubuntu22.04_all.deb
-apt update
-apt install -y netinsight
-```
-
-**Ubuntu 24.04 (noble):** same but `1.0.0-82+ubuntu24.04`.
-
-The full installation guide lives at [`INSTALL.md`](https://github.com/dkg-netinsight/netinsight/blob/main/INSTALL.md) in the main NETINSIGHT repository.
+See `netinsight-install(8)` for flags (`--silent`, `--resume`, `--no-cinematic`, `--no-color`, `--no-asciinema`, etc.).
 
 ## Repository signing
 
