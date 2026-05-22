@@ -16,15 +16,15 @@ Pick the `netinsight-release` `.deb` matching your Ubuntu LTS, then `apt install
 
 **Ubuntu 22.04 (jammy):**
 ```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-74+ubuntu22.04_all.deb
-dpkg -i netinsight-release_1.0.0-74+ubuntu22.04_all.deb
+wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-75+ubuntu22.04_all.deb
+dpkg -i netinsight-release_1.0.0-75+ubuntu22.04_all.deb
 netinsight-install
 ```
 
 **Ubuntu 24.04 (noble):**
 ```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-74+ubuntu24.04_all.deb
-dpkg -i netinsight-release_1.0.0-74+ubuntu24.04_all.deb
+wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-75+ubuntu24.04_all.deb
+dpkg -i netinsight-release_1.0.0-75+ubuntu24.04_all.deb
 netinsight-install
 ```
 
@@ -34,13 +34,13 @@ netinsight-install
 
 **Ubuntu 22.04 (jammy):**
 ```bash
-wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-74+ubuntu22.04_all.deb
-dpkg -i netinsight-release_1.0.0-74+ubuntu22.04_all.deb
+wget --tries=5 --waitretry=10 https://dkg-netinsight.github.io/apt-repo/pool/main/n/netinsight/netinsight-release_1.0.0-75+ubuntu22.04_all.deb
+dpkg -i netinsight-release_1.0.0-75+ubuntu22.04_all.deb
 apt update
 apt install -y netinsight
 ```
 
-**Ubuntu 24.04 (noble):** same but `1.0.0-74+ubuntu24.04`.
+**Ubuntu 24.04 (noble):** same but `1.0.0-75+ubuntu24.04`.
 
 The full installation guide lives at [`INSTALL.md`](https://github.com/dkg-netinsight/netinsight/blob/main/INSTALL.md) in the main NETINSIGHT repository.
 
