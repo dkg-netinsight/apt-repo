@@ -1,18 +1,18 @@
 Package: netinsight
-Version: 1.0.0-76
+Version: 1.0.0-77
 Architecture: all
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 59
-Depends: netinsight-server (= 1.0.0-76), netinsight-frontend (= 1.0.0-76), netinsight-mysql-schema (= 1.0.0-76), netinsight-ingestor (= 1.0.0-76)
-Recommends: netinsight-doc (= 1.0.0-76)
+Installed-Size: 60
+Depends: netinsight-server (= 1.0.0-77), netinsight-frontend (= 1.0.0-77), netinsight-mysql-schema (= 1.0.0-77), netinsight-ingestor (= 1.0.0-77)
+Recommends: netinsight-doc (= 1.0.0-77)
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
-Filename: pool/main/n/netinsight/netinsight_1.0.0-76_all.deb
-Size: 54718
-SHA256: 5899a8e753c9350d234036ea04faf9f669a2d80afd16e72e8da83009451db109
-SHA1: 903ad69ac8a2594e713590173f7dd0582f7584ad
-MD5sum: f2ab9ba6b6a1d6a80bdc1ca55ad59099
+Filename: pool/main/n/netinsight/netinsight_1.0.0-77_all.deb
+Size: 55310
+SHA256: 7759cdc179e3ea1b3d5c82dd77982a48fbaabcb9a9077bcac79c49796e23761e
+SHA1: cd439589224da46f4e24867d682ead3a75eb9fe7
+MD5sum: 8bae14d8da90a7612157ad633b71861f
 Description: enterprise full-stack metapackage for NETINSIGHT
  Single-step install of the NETINSIGHT enterprise stack:
  .
@@ -25,22 +25,22 @@ Description: enterprise full-stack metapackage for NETINSIGHT
 
 Package: netinsight-common
 Source: netinsight
-Version: 1.0.0-76
+Version: 1.0.0-77
 Architecture: all
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 318
+Installed-Size: 333
 Depends: adduser, systemd, lsb-base, python3 (>= 3.10), python3-rich
 Breaks: netinsight (<< 1.0.0-2~)
 Replaces: netinsight (<< 1.0.0-2~), netinsight-release (<< 1.0.0-55~)
-Provides: netinsight (= 1.0.0-76)
+Provides: netinsight (= 1.0.0-77)
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
-Filename: pool/main/n/netinsight/netinsight-common_1.0.0-76_all.deb
-Size: 100516
-SHA256: 1c82ee656e97e0e39a6ca20ece4faa5690873d51b7512aceaf74eb367391fb3c
-SHA1: d609d3c95e950a4935dba087d3b2f8e9117a807b
-MD5sum: 4b38c31dec0312269422ab6c1a113a32
+Filename: pool/main/n/netinsight/netinsight-common_1.0.0-77_all.deb
+Size: 105306
+SHA256: c075e288424f2b222753d0123b67396602cb0316e456ca76a09ac8e427a32efb
+SHA1: 2c6aea5e53bc8e0a9b30bc085e3144d77f43079d
+MD5sum: 08cae56c27b701b62447a8aa5402e4ad
 Description: NETINSIGHT common files (units, conf, logrotate, AppArmor, doctor)
  Shared assets needed by every NETINSIGHT install: systemd unit files,
  logrotate configuration, AppArmor profile, the sanitised configuration
@@ -60,21 +60,21 @@ Description: NETINSIGHT common files (units, conf, logrotate, AppArmor, doctor)
 
 Package: netinsight-doc
 Source: netinsight
-Version: 1.0.0-76
+Version: 1.0.0-77
 Architecture: all
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 90
+Installed-Size: 91
 Breaks: netinsight (<< 1.0.0-2~)
 Replaces: netinsight (<< 1.0.0-2~)
 Multi-Arch: foreign
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: doc
-Filename: pool/main/n/netinsight/netinsight-doc_1.0.0-76_all.deb
-Size: 81612
-SHA256: c04ba4b939bb04b321ae7d6fbd01958484c4a21f350e79c37766e08ba34dd18d
-SHA1: c72ed67c14078ad533fa95163a8b612c5ab3d929
-MD5sum: cea64c1a5fe1b25f674f589b32f83dc2
+Filename: pool/main/n/netinsight/netinsight-doc_1.0.0-77_all.deb
+Size: 82192
+SHA256: dafc6d6463a28423806ae39468d3d9f05c1e83b774380ff04c0f3e465ac2ba3f
+SHA1: dbd122177f04c65a2b5c5ddbf26ef2d1ca55c30b
+MD5sum: 6380e832e5aa9c26d3ec792a1e7049f7
 Description: NETINSIGHT user documentation
  INSTALL.md, configuration-reference.md, upgrade-guide.md, migration-guide.md,
  operations-runbook.md, and release-notes-1.0.0.md. The configuration
@@ -84,22 +84,22 @@ Description: NETINSIGHT user documentation
 
 Package: netinsight-frontend
 Source: netinsight
-Version: 1.0.0-76
+Version: 1.0.0-77
 Architecture: all
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 6225
-Depends: netinsight-common (= 1.0.0-76)
-Recommends: nginx, netinsight-server (= 1.0.0-76)
+Installed-Size: 6226
+Depends: netinsight-common (= 1.0.0-77)
+Recommends: nginx, netinsight-server (= 1.0.0-77)
 Breaks: netinsight (<< 1.0.0-2~)
 Replaces: netinsight (<< 1.0.0-2~)
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
-Filename: pool/main/n/netinsight/netinsight-frontend_1.0.0-76_all.deb
-Size: 4482572
-SHA256: fc3929943b8b2b60b349c46e5d0fac67ea4391d61f22650c80eed15e3d032a25
-SHA1: 23797876e399c38b8ac3bc0692bc042fd12b48e5
-MD5sum: c88e6977964c3a1534d5183b92e86830
+Filename: pool/main/n/netinsight/netinsight-frontend_1.0.0-77_all.deb
+Size: 4483296
+SHA256: 597017902fad86b8d9ae84c6e0453e315b8b90101fe7af9067d4f44c7c0874f1
+SHA1: 5c4a588d6d5f1a9b45014069dd70c67392a6a4c2
+MD5sum: aff768fb2a4162d572c86bb6dd344409
 Description: NETINSIGHT frontend (templates, static, nginx vhost)
  Server-rendered Jinja templates, static assets (CSS, JS ES modules,
  images, icons), and the nginx vhost include
@@ -108,22 +108,22 @@ Description: NETINSIGHT frontend (templates, static, nginx vhost)
 
 Package: netinsight-ingestor
 Source: netinsight
-Version: 1.0.0-76
+Version: 1.0.0-77
 Architecture: amd64
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 13442
-Depends: libc6 (>= 2.34), netinsight-common (= 1.0.0-76), python3, python3-mysql.connector, systemd, default-mysql-client | mariadb-client | mysql-client
-Recommends: netinsight-server (= 1.0.0-76)
+Installed-Size: 13443
+Depends: libc6 (>= 2.34), netinsight-common (= 1.0.0-77), python3, python3-mysql.connector, systemd, default-mysql-client | mariadb-client | mysql-client
+Recommends: netinsight-server (= 1.0.0-77)
 Breaks: netinsight (<< 1.0.0-2~)
 Replaces: netinsight (<< 1.0.0-2~)
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
-Filename: pool/main/n/netinsight/netinsight-ingestor_1.0.0-76_amd64.deb
-Size: 4221784
-SHA256: d6087b66b49292bbaee3ba382f31d39df90b33ccd55b36ff855feae2087eda12
-SHA1: 79888ce378714564770c62d0ec791078fcfb39d2
-MD5sum: ef7c00262636f25c1d416f47b4522602
+Filename: pool/main/n/netinsight/netinsight-ingestor_1.0.0-77_amd64.deb
+Size: 4222360
+SHA256: 715579d8f8f4d25dcfd3cea1abbd9548751857f7bd23ed809df5a3c105286a39
+SHA1: ea9464df641dffe084e26c4bce45752f21fb23ed
+MD5sum: 569e69a3a907bb8385a959f945e5d485
 Description: NETINSIGHT data plane (FlowBit collector + listeners + MySQL bridge)
  The data-ingestion plane that feeds NETINSIGHT live traffic data:
  .
@@ -138,22 +138,22 @@ Description: NETINSIGHT data plane (FlowBit collector + listeners + MySQL bridge
 
 Package: netinsight-mysql-schema
 Source: netinsight
-Version: 1.0.0-76
+Version: 1.0.0-77
 Architecture: all
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 282
-Depends: netinsight-common (= 1.0.0-76), python3, alembic | python3-alembic
-Recommends: default-mysql-server | default-mysql-server-core, default-mysql-client | mariadb-client, netinsight-server (= 1.0.0-76)
+Installed-Size: 283
+Depends: netinsight-common (= 1.0.0-77), python3, alembic | python3-alembic
+Recommends: default-mysql-server | default-mysql-server-core, default-mysql-client | mariadb-client, netinsight-server (= 1.0.0-77)
 Breaks: netinsight (<< 1.0.0-2~)
 Replaces: netinsight (<< 1.0.0-2~)
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
-Filename: pool/main/n/netinsight/netinsight-mysql-schema_1.0.0-76_all.deb
-Size: 92778
-SHA256: c706adf75af5b8d428080ff176a0ef575a7974f587aed4448aa06823dcb25539
-SHA1: e8df4b35a8ce42537a30e9239dedce7717e62df8
-MD5sum: d02fca78f8fffa1b9f45f45406d794c5
+Filename: pool/main/n/netinsight/netinsight-mysql-schema_1.0.0-77_all.deb
+Size: 93370
+SHA256: 0521847378a9d3f12492f0777413b89280f50e1b019a3be2161754e457d4864b
+SHA1: 42b4b2ae7e4fd4023aebf6e41e0bfc058cf00744
+MD5sum: 80655d4ab19e92910c48bc0da70545bf
 Description: NETINSIGHT database migrations (alembic)
  Alembic migration tree (current head c9d0e1f2a3b4) defining the
  NETINSIGHT MySQL schema: users, roles, permissions, sessions,
@@ -162,10 +162,10 @@ Description: NETINSIGHT database migrations (alembic)
 
 Package: netinsight-release
 Source: netinsight
-Version: 1.0.0-76+ubuntu24.04
+Version: 1.0.0-77+ubuntu24.04
 Architecture: all
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 226
+Installed-Size: 227
 Depends: gnupg | gnupg2, python3 (>= 3.10)
 Recommends: python3-rich, qrencode, figlet, boxes, lolcat, asciinema
 Breaks: netinsight-common (<< 1.0.0-55~)
@@ -173,11 +173,11 @@ Replaces: netinsight-common (<< 1.0.0-55~)
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
-Filename: pool/main/n/netinsight/netinsight-release_1.0.0-76+ubuntu24.04_all.deb
-Size: 83788716
-SHA256: e606f2e09eef579f416acfef08f7cfe6c810b226a4bec1e90d98d1199b283e6e
-SHA1: f7cf45bfba9405eacd93859f9b6c2971ee4aeb2e
-MD5sum: aca1ae946a8accf456b55687317e6fcd
+Filename: pool/main/n/netinsight/netinsight-release_1.0.0-77+ubuntu24.04_all.deb
+Size: 83790060
+SHA256: 68868ea796f14f77ed68fe9b1c8fca2eb94b932ce716e51f6e6946b33e19e5ff
+SHA1: 1985d971b1b2aaff9011fb6e83f543f6ff6e03f6
+MD5sum: 7911505910f6435f5638a52bcf182f6b
 Description: NETINSIGHT APT repository sources, signing key, and cinematic installer
  This package installs the GPG keyring at
  /etc/apt/keyrings/netinsight-archive-keyring.gpg and registers
@@ -209,22 +209,22 @@ Description: NETINSIGHT APT repository sources, signing key, and cinematic insta
 
 Package: netinsight-server
 Source: netinsight
-Version: 1.0.0-76
+Version: 1.0.0-77
 Architecture: all
 Maintainer: Dimple Kumar Gupta <dimple9292.dkg@gmail.com>
-Installed-Size: 1909
-Depends: debconf (>= 0.5) | debconf-2.0, netinsight-common (= 1.0.0-76), python3 (>= 3.10), python3-venv, systemd, openssl, default-mysql-client | mariadb-client | mysql-client, default-mysql-server | mariadb-server | mysql-server, redis-server, nginx
-Recommends: default-mysql-server | default-mysql-server-core, netinsight-frontend (= 1.0.0-76), netinsight-mysql-schema (= 1.0.0-76), python3-flask, python3-werkzeug, python3-celery, python3-redis, python3-jinja2, python3-marshmallow, python3-requests, python3-pyotp, python3-mysql.connector
+Installed-Size: 1910
+Depends: debconf (>= 0.5) | debconf-2.0, netinsight-common (= 1.0.0-77), python3 (>= 3.10), python3-venv, systemd, openssl, default-mysql-client | mariadb-client | mysql-client, default-mysql-server | mariadb-server | mysql-server, redis-server, nginx
+Recommends: default-mysql-server | default-mysql-server-core, netinsight-frontend (= 1.0.0-77), netinsight-mysql-schema (= 1.0.0-77), python3-flask, python3-werkzeug, python3-celery, python3-redis, python3-jinja2, python3-marshmallow, python3-requests, python3-pyotp, python3-mysql.connector
 Breaks: netinsight (<< 1.0.0-2~)
 Replaces: netinsight (<< 1.0.0-2~)
 Homepage: https://dkg-netinsight.github.io/apt-repo/
 Priority: optional
 Section: net
-Filename: pool/main/n/netinsight/netinsight-server_1.0.0-76_all.deb
-Size: 387986
-SHA256: 0b4426c6c989aa5013469301ffe65c43dd6e6b6c175b977c1f4a93bdc5582b5b
-SHA1: 6ae7cc86f1c5bce40d84bf5b2a7fd9a2ba8204f3
-MD5sum: 8347b5027ffad669001461a7ae61c721
+Filename: pool/main/n/netinsight/netinsight-server_1.0.0-77_all.deb
+Size: 388666
+SHA256: 72611277ecacd22474f5ec77c8c62eae62365bf1d990f2716e753671f1546f3d
+SHA1: 4dd91664e3c4687bde563e6c034194cf71f422ab
+MD5sum: 10ea42c3487a616b14144034ca242809
 Description: NETINSIGHT server (Flask + Gunicorn + Celery)
  The Python application code (Flask + Gunicorn for HTTP, Celery for
  background reports + scheduled jobs) plus the four /usr/sbin/
