@@ -6,44 +6,44 @@ Label: NETINSIGHT
 Suite: stable
 Codename: noble
 Version: 1.0
-Date: Fri, 22 May 2026 09:40:21 UTC
+Date: Fri, 22 May 2026 09:56:55 UTC
 Architectures: amd64
 Components: main
 Description: NETINSIGHT enterprise apt repository — Ubuntu 24.04 (noble)
 MD5Sum:
- 27405198abfb394c29e787282ae3103a 10676 main/binary-amd64/Packages
- 1f50a694a910e17667fb211c42af9556 3743 main/binary-amd64/Packages.gz
+ cb5b26c3a27f869eb5eb3d07f5552588 10676 main/binary-amd64/Packages
+ 6a5aeed7cb425cc8695524fbe6df3b9d 3737 main/binary-amd64/Packages.gz
  a918cfbd599f3eafc56b78d3f5204090 177 main/binary-amd64/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  19301f1ee4319a485ba489905afed5d7 178 main/source/Release
 SHA1:
- affdbcfc22e278cd58281caadd1362b6fc278722 10676 main/binary-amd64/Packages
- 8b24544cf6e3a9bb03d5431926188c305e7eacc3 3743 main/binary-amd64/Packages.gz
+ e761b54ad6c5f8142e538064d3822ccc2908e777 10676 main/binary-amd64/Packages
+ 91d864d1086cf85c05f8c8662dbf657f47ab0e5e 3737 main/binary-amd64/Packages.gz
  70f807e3d8a38ab4dd04defbd9fb6cd619ac5835 177 main/binary-amd64/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  59aa8a7ce960144c7ad9fbcd3aea8c6f9681e60e 178 main/source/Release
 SHA256:
- 1298beeb7427c4587e20f59ca4ceb9d5a7f6d2df03480fa625332e20cc7cc8f5 10676 main/binary-amd64/Packages
- 7e82ae2d5418b9cb97c1d7597ad9c078c8886afe21485da1095e930889e07d77 3743 main/binary-amd64/Packages.gz
+ d89a52367a2423d8dea42a5db9ba6179c9a56bdf60de56df90b5ffaaa0eec5c3 10676 main/binary-amd64/Packages
+ 9d11ff7db04e7a3f7332a73d235cab394e679f2f91ee2a16ee5b3eb45df3334a 3737 main/binary-amd64/Packages.gz
  ac266114d75970fca885b7df2a121d90fcf4a62c3015c15d38247e94b4ee9a53 177 main/binary-amd64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
  6d18ef7b643bf07ff7d0deb6e690b80ea408a0c7a11a723f2f5a92e139492e9f 178 main/source/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEENxm7BqTT6Rz37OXhGhQgrOQNwhgFAmoQJIUACgkQGhQgrOQN
-whgj/g//SB32ZJPjf9RELbEdUzsZLyr86gy+R8aTY3NwWVr/NlmOr5I//JYCJpXC
-MWJfed4Fddo6V7hdLUP696WZrwBaRP5ztMgfEloVXga+UWe3bTQg6ytJz1fK4JSY
-V7H+a+zbid64EC2AeSBEe4zYrk0qwgrNwWZQciv6ZP0HjH4gLoH86yF/ZUUTjS4v
-Zyi1svNoWE5qz0mqbzU1tlwGF67PW5SodGYDuUFi2GtNhTgoTaQBZEjN1fpvxx3f
-kWsxppoZluSEhDh11bgHgHbmcGatYsXrm7XDQL8mMlFIYD37KlXR3wp1iBsOx+of
-vH70pJSTvH0I1j8QscR7kPLGbI3rJzbi0eX19VkhsDXFtZDD44/qR0RiIZlKc7bS
-5ZoDndtwni71sI32Tt8xkClWnOJIRBmU0/4bgjDXFlxjqBDDBDR+BGdfo6uc8bqu
-Ny6b1uUP3wtcfiSlic7Yvn+85PozBojlavNeheWS68Nvqm+SWXgKob2WLhotQQAM
-Zfs9ADeczWptvzXQ7mKbKPCh1cnXfoyYQkjZHglXmjj0JTnc8IdzzYqCuEZNlEZR
-0VBq1Wkb4pFtAkj7bmUworv4o47PfpfNCok25iHqpf88FzC4D+O4tRnzoJl8oOOK
-ZyITG/9P5QK22aQqk4sZ/O0/6UiC5foQrSNqauokiVaPqWZ2MRw=
-=IoKW
+iQIzBAEBCgAdFiEENxm7BqTT6Rz37OXhGhQgrOQNwhgFAmoQKGcACgkQGhQgrOQN
+whhXRRAAqAxCxx9ydJJHugS2ejuoKitwP+FjyWmOsrvjtnVLnM+mdvUFgNd7+eXz
+ZiNKLJQoqqreQ6cWHORae3o6gaq3cJkqrn7iprFZbxB2eMfOJGYRegeYEB2DJ/12
+7pxOkHPgJQYn+w1re7s/l7D4NfuGRZKvQYzpW1mxoxV6LgJFn2dpItZWA0rLKhnt
++7Li/yI0JPk+jFuE+s1Sb7IohvIm9Nlkgh3f49mB0FyRtuwYOjysDa4aeYJGbKuL
+HevmnMSYUBRW3PVkD4MFzTljFKruofzL7LSQ5pryQA2lXMxXe7daBntdlxf8NuJi
+WVma43WJy+e/Kogi3DKkkdpyV96N1gjUHvVBJFXFZI2RlRcy4NOdVrQ8yPlUlCaw
+EktZVn7VmNSk7wewApPrPMGCAacbX32fUyZyhVPM21rd9cE64BpwgucmUgegjN/S
+/boipwLW8EgDf5aPqk8rROtiWx3dhttfqySiS6XhP0A0c4+D/dM1KQB7FHmqh4ZL
+Da0R8MYsD5dULmkma3hV3qDjS3gz7luX7WrCWvLAtpS61AYOD6cPX29LRvhUAyWG
+IBsVPatXkHMTKPKf9KP4TKfmVdhN4nyvuzgpqtq2Si99zd7/n8J16LPgQicHiQ4E
+GTaZnj/5Cxe85pIQvrzb7MPT3ZR1GWtOUoFw1RkldXGrhvOPqLw=
+=gjcA
 -----END PGP SIGNATURE-----
